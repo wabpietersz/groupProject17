@@ -15,7 +15,7 @@ $utype = $_POST['utype']
 if ($pw == $cpw) {
 	$pw = md5($pw);
 
-	$query = "SELECT * FROM architect WHERE userName = '$uname'";
+	$query = "SELECT * FROM researcher WHERE userName = '$uname'";
 
 	$res = mysqli_query($conn,$query);
 
@@ -32,7 +32,7 @@ if ($pw == $cpw) {
 	$res2 = mysqli_query($conn,$sql2);
 
 	echo "Inserted!";
-	echo $conn->error();
+
 	}
 
 } else {
