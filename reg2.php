@@ -5,12 +5,14 @@ $fname = $_POST['fname'];
 $lname = $_POST['lname'];
 $uname = $_POST['uname'];
 $em = $_POST['em'];
-$mid = $_POST['mid'];
+$rarea = $_POST['rarea'];
+$uid = $_POST['uid'];
+$uni = $_POST['uni'];
 $nic = $_POST['nic'];
 $city = $_POST['city'];
 $pw = $_POST['pw'];
 $cpw = $_POST['cpw'];
-$utype = $_POST['utype']
+$utype = 3;
 
 if ($pw == $cpw) {
 	$pw = md5($pw);
@@ -23,21 +25,18 @@ if ($pw == $cpw) {
 		echo "User already exists!";
 	} else {
 
-	$sql1 = "INSERT INTO architect (firstName,lastName,userName,email,m_id,nic,city) VALUES ('$fname','$lname','$uname','$em','$mid',$nic','$city')";
+	$sql1 = "INSERT INTO researcher (firstName,lastName,userName,email,researchArea,uni_id,university,nic,city) VALUES ('$fname','$lname','$uname','$em','$rarea','$uid','uni','$nic','$city')";
 
 	$res1 = mysqli_query($conn,$sql1);
 
-	$sql2 = "INSERT INTO user (userName,password,userType) VALUES ('$uname','$pw',2)";
+	$sql2 = "INSERT INTO user (userName,password,userType) VALUES ('$uname','$pw','$utype')";
 
 	$res2 = mysqli_query($conn,$sql2);
 
 	echo "Inserted!";
 
-	}
 
-} else {
-	echo "Error!
-	";
+}
 }
 
 
