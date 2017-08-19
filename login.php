@@ -1,3 +1,6 @@
+<?php 
+	require ('dbcon.php');
+?>
 <!doctype html>
 <html lang = "en">
 
@@ -81,15 +84,16 @@
 
 			<div class="col-md-6">
 				<div class="jumbotron">
+				<form method="POST" action="log.php">
 					<form>
 						<div class="form-group">
-						    <label for="usr">Email</label>
-						    <input type="text" class="form-control">
+						    <label for="uname">User Name</label>
+						    <input type="text" name="uname"class="form-control">
 						</div>
 
 						<div class="form-group">
 						    <label for="pwd">Password</label>
-					        <input type="password" class="form-control">
+					        <input type="password" name="pw" class="form-control">
 						</div>
 						<button type="submit" class="btn btn-success">Login</button>
 						<button type="submit" class="btn btn-danger">Forgot my Password</button>

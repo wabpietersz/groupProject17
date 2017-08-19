@@ -225,7 +225,7 @@
 
 							    <div class="form-group">
 							      <label for="usr">University ID</label>
-							      <input type="text" name="u_id" class="form-control">
+							      <input type="text" name="uid" class="form-control">
 							    </div>
 
 							    <div class="form-group">
