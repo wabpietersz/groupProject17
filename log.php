@@ -1,6 +1,6 @@
 <?php 
 session_start();
-	require ('dbcon.php');
+require ('dbcon.php');
 if (isset($_POST['uname']) and isset($_POST['pw'])){
 
 	$uname = $_POST['uname'];
@@ -13,9 +13,10 @@ if (isset($_POST['uname']) and isset($_POST['pw'])){
 
 	if ($count==1){
 		$_SESSION['uname'] = $uname;
+		header("location: index.php");
 	}else{
-		$fmsg = "invalid Login Credentials"
+		$fmsg = "invalid Login Credentials";
 	}
 
-
+}
 ?>

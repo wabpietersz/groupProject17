@@ -96,7 +96,7 @@
 					        <input type="password" name="pw" class="form-control">
 						</div>
 						<button type="submit" class="btn btn-success">Login</button>
-						<button type="submit" class="btn btn-danger">Forgot my Password</button>
+						<button type="reset" class="btn btn-danger">Forgot my Password</button>
 					</form>
 				</div>	
 			</div>	
