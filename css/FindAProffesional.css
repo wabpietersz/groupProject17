@@ -1,19 +1,53 @@
-.profile{
-	display: block;
-	margin-top:-100px;
+.dropbtn {
+	width: 500px;
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
 }
 
-.profile img{
-	height:150px;
-	width:150px;
-	border:1px solid black;
+.dropbtn:hover {
+    background-color:  #009688;
+    color: white;
+
 }
 
-.coverImage img{
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin:auto;
+}
+
+.dropdown-content {
+	width: 500px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgb a(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+#findProfetionalBack{
+	background-image: url("cover.png");
+	height:400px;
 	width:100%;
-	height:250px;
+	background-repeat: no-repeat;
 }
-
 
 <!--this is for header and footer only-->
 body{
@@ -124,6 +158,11 @@ body{
 	color:#ffffff;
 }
 
+#ContentImage{
+	height:470px;
+	width: 1100px;
+	margin:0 auto;
+}
 
 #NewsFeedHeading{
 	margin-top:50px;
@@ -133,4 +172,5 @@ body{
 
 #Footer{
 	background-color: #83D0C9;
+	margin-top: 50px;
 }

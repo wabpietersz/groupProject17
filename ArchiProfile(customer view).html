@@ -7,7 +7,7 @@
 	<metaname="viewport" content="width=device-width, initial-scale=1">
 
 	<!--this is for link css file-->
-	<link rel="stylesheet" type="text/css" href="css/researcherProfile.css">
+	<link rel="stylesheet" type="text/css" href="css/ArchiProfile.css">
 	
 	<!--//this is for link icons for site-->
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
@@ -56,12 +56,14 @@
 			          <li><a href="#">Interior Trends</a></li>
 			        </ul>
 			      </li>
-			      <li><a href="#" id="NavFont">WIKI</a></li>
+			      <li><a href="#" id="NavFont">Forum</a></li>
 			      <li><a href="#" id="NavFont">About Us</a></li>  
 			    </ul>
 			    
 				<ul class="nav navbar-nav navbar-right" id="NavFont">
-			      <li><a href="#" id="NavFont"><i class="fa fa-user-circle" aria-hidden="true"></i>  Name</a></li>
+					<li><a href="#" id="NavFont"><i class="fa fa-comment" aria-hidden="true"></i>  Messages</a></li>
+					<li><a href="ArchiProfile(archi's view).html" id="NavFont"><i class="fa fa-user-circle" aria-hidden="true"></i>  Name</a></li>	
+			        <li><a href="index.html" id="NavFont"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a></li>
 			    </ul>	
 
 			    <form class="navbar-form navbar-right" id="NavFont">
@@ -97,16 +99,32 @@
 					<ul class="nav nav-pills nav-justified">
 					    <li><a href="#">Overview</a></li>
 					    <li><a href="#">Project</a></li>
-					    <li><a href="#">Questions</a></li>
 					    <li><a href="#">Reviews</a></li>
-				    </ul>
+					</ul>
 				</div>
 
 				<div class="col-md-2">
-
+					<button type="button" class="btn btn-default"><i class="fa fa-envelope" aria-hidden="true"></i>  Message</button>
 				</div>	
 				
 			</div>
+		</div>	
+
+		<!--google map-->
+		<div class="row">
+			<div id="map" style="width:auto;height:400px;background:yellow"></div>
+
+			<script>
+			function myMap() {
+			  var mapCanvas = document.getElementById("map");
+			  var mapOptions = {
+			    center: new google.maps.LatLng(51.5, -0.2), zoom: 10
+			  };
+			  var map = new google.maps.Map(mapCanvas, mapOptions);
+			}
+			</script>
+
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB87iA2NJnNH2DvDaQkFuIq0DaZ1Ghie1I&callback=myMap"></script>
 		</div>	
 
 		<div class="row" id="Footer">
