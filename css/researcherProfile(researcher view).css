@@ -1,3 +1,33 @@
+.profile{
+	margin-top:-100px;
+}
+
+.profile img{
+	height:150px;
+	width:150px;
+	border:1px solid black;
+}
+
+.coverImage img{
+	width:100%;
+	height:250px;
+}
+
+#userSocial{
+	color:#233249;
+	margin:2px;
+}
+
+#userSocial:hover{
+	color:#009688;
+	margin:5px;
+}
+
+#userName{
+	margin-top:-80px;
+	color:white;
+}
+
 .card {
 
 	margin-top:12px;
@@ -20,6 +50,53 @@
     padding: 2px 16px;
 }
 
+
+<!--this is for header and footer only-->
+#leftSideContent{
+	max-height: 100%;
+	background-color:#f5f5dc;
+	padding-top: 10px;
+}
+
+#sideBar1{
+	color: black;
+	background-color: #777777;
+	border:1px solid black;
+	border-radius: 0px;
+	margin-top: 10px;
+}
+
+
+#sideBar{
+	color: black;
+	background-color: #777777;
+	border:1px solid black;
+	border-radius: 0px;
+}
+
+#sideBar1:hover{
+	color: black;
+	background-color:#f5f5dc;
+	border:1px solid black;
+	border-radius: 0px;
+	margin-top: 10px;
+}
+
+
+#sideBar:hover{
+	color: black;
+	background-color: #f5f5dc;
+	border:1px solid black;
+	border-radius: 0px;
+}
+
+#jumbotron{
+	background-color: #f5f5dc;
+}
+
+#projectImages{
+	margin-bottom: 25px;
+}
 
 <!--this is for header and footer only-->
 body{
@@ -130,11 +207,6 @@ body{
 	color:#ffffff;
 }
 
-#ContentImage{
-	height:470px;
-	width: 1100px;
-	margin:0 auto;
-}
 
 #NewsFeedHeading{
 	margin-top:50px;
@@ -144,5 +216,4 @@ body{
 
 #Footer{
 	background-color: #83D0C9;
-	margin-top: 50px;
 }

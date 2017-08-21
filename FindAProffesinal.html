@@ -46,8 +46,9 @@
 			      <a class="navbar-brand" href="index.html" id="NavFontLogo">Nivahan.lk</a>
 			    </div>
 			    <ul class="nav navbar-nav" >
-			      <li><a href="#" id="NavFont">Find a proffesional</a></li>
-			      <li><a href="#" id="NavFont">Wiki</a></li>
+			      <li><a href="FindAProffesinal.html" id="NavFont">Find Proffesional</a></li>
+			      <li><a href="#" id="NavFont">Forum</a></li>
+			      <li><a href="Wiki.html" id="NavFont">Wiki</a></li>
 			      <li><a href="#" id="NavFont">About Us</a></li>  
 			    </ul>
 			    
@@ -68,40 +69,49 @@
 		</div>
 
 		<div class="row" id="content">
-			<div class="row" id="findProfetionalBack">
-				<div class="dropdown">
-					<button onclick="myFunction()" class="dropbtn">Dropdown</button>
-					  <div id="myDropdown" class="dropdown-content">
-					    <a href="#home">Home</a>
-					    <a href="#about">About</a>
-					    <a href="#contact">Contact</a>
-					  </div>
+			<center>
+				<div class="row">
+					<form class="navbar-form ">
+				      <div class="form-group">
+				        <input type="text" class="form-control" placeholder="Search">
+				      </div>
+				      <button type="submit" class="btn btn-default" >SEARCH</button>
+				    </form>
+				</div>
+			</center>
+
+			<div class="row">
+				<div class="col-md-1">
 				</div>
 
-				<script>
-				/* When the user clicks on the button, 
-				toggle between hiding and showing the dropdown content */
-				function myFunction() {
-				    document.getElementById("myDropdown").classList.toggle("show");
-				}
+				<div class="col-md-10">
+					<div class="jumbotron">
+						<h3>Signature Homes Northland</h3>
+						<img src="Images/10.jpg" heigh="400px" width="400px">
+						<p>Originally founded in 1983, we are one of New Zealand’s most well known and respected residential building companies. Since then Signature Homes has become synonymous with modern design, uncompromised quality and service, and our entire network is committed to the continuous improvement of the services we offer</p>
+						<a href="#">more</a>
+					</div>	
 
-				// Close the dropdown if the user clicks outside of it
-				window.onclick = function(event) {
-				  if (!event.target.matches('.dropbtn')) {
+					<div class="jumbotron">
+						<h3>Homeworld Design & Build</h3>
+						<img src="Images/11.jpg" heigh="400px" width="400px">
+						<p>We are a proud local company utilising local suppliers whilst remaining at the forefront of innovative design and quality construction. We’re dedicated to providing quality, value for money homes for our customers. Our 35+ years in business are a testament to our commitment to building homes in Northland.
+						Our aim is to give you, our valued client, the best service possible, therefore we have a professional team of designers, new home consultants, construction supervisors, managers and administration staff second to none in the industry. We manage every aspect of your build from start to finish to make the whole process hassle free for you.</p>
+						<a href="#">more</a>
+					</div>
 
-				    var dropdowns = document.getElementsByClassName("dropdown-content");
-				    var i;
-				    for (i = 0; i < dropdowns.length; i++) {
-				      var openDropdown = dropdowns[i];
-				      if (openDropdown.classList.contains('show')) {
-				        openDropdown.classList.remove('show');
-				      }
-				    }
-				  }
-				}
-				</script>
+					<div class="jumbotron">
+						<h3>Signature Homes Northland</h3>
+						<img src="Images/10.jpg" heigh="400px" width="400px">
+						<p>Originally founded in 1983, we are one of New Zealand’s most well known and respected residential building companies. Since then Signature Homes has become synonymous with modern design, uncompromised quality and service, and our entire network is committed to the continuous improvement of the services we offer</p>
+						<a href="#">more</a>
+					</div>
+				</div>
 
-			</div>
+				<div class="col-md-1">
+				</div>
+					
+			</div>	
 			
 		</div>	
 
