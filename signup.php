@@ -48,7 +48,7 @@
 			<nav class="navbar navbar-inverse" id="NavBar">
 			  <div class="container-fluid" >
 			    <div class="navbar-header"> 
-			      <a class="navbar-brand" href="index.html" id="NavFontLogo">Nivahan.lk</a>
+			      <a class="navbar-brand" href="index.php" id="NavFontLogo">Nivahan.lk</a>
 			    </div>
 			    <ul class="nav navbar-nav" >
 			      <li><a href="#" id="NavFont">Guide Me</a></li>
@@ -63,17 +63,18 @@
 			      <li><a href="#" id="NavFont">WIKI</a></li>
 			      <li><a href="#" id="NavFont">About Us</a></li>  
 			    </ul>
-			    
-				<ul class="nav navbar-nav navbar-right" id="NavFont">
-			      <li><a href="login.php" id="NavFont"><i class="fa fa-sign-in " aria-hidden="true"></i> Login</a></li>
-			    </ul>	
-
 			    <form class="navbar-form navbar-right" id="NavFont">
 			      <div class="form-group" id="SearchBarButton">
 			        <input type="text" class="form-control" placeholder="Search">
 			      </div>
 			      <button type="submit" class="btn btn-default" id="SearchBarButton"><i class="fa fa-search " aria-hidden="true"></i></button>
 			    </form>
+			    
+				<ul class="nav navbar-nav navbar-right" id="NavFont">
+			      <li><a href="login.php" id="NavFont"><i class="fa fa-sign-in " aria-hidden="true"></i> Login</a></li>
+			    </ul>	
+
+			    
 
 			  </div>
 			</nav>
@@ -95,8 +96,8 @@
 				  <div class="tab-content">
 				    <div id="NormalUser" class="tab-pane fade in active">
 				    	<div class="row">
-				    		<h2>SignUp For Normal User</h2>
-				    		<form method="POST" action="reg.php">
+				    		<!--<h2>SignUp For Normal User</h2>-->
+				    	<form method="POST" action="reg.php">
 							    <div class="form-group">
 							      <label for="usr">First Name</label>
 							      <input type="text" name="fname" class="form-control">
@@ -143,8 +144,8 @@
 						</div>  	
 				    </div>
 				    <div id="Architect" class="tab-pane fade">
-				      <h2>SignUp For Architect</h2>
-				      <form method="POST" action="reg1.php">
+				      <!--<h2>SignUp For Architect</h2>-->
+				      	<form method="POST" action="reg1.php">
 				      		<form>
 							    <div class="form-group">
 							      <label for="usr">First Name</label>
@@ -195,8 +196,8 @@
 						    </form>
 				    </div>
 				    <div id="Resercher" class="tab-pane fade">
-				      <h2>SignUp For Researcher</h2>
-				      <form method="POST" action="reg2.php">
+				      <!--<h2>SignUp For Researcher</h2>-->
+				      		<form method="POST" action="reg2.php">
 				      		<form>
 							    <div class="form-group">
 							      <label for="usr">First Name</label>

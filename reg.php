@@ -18,6 +18,8 @@ if ($pw == $cpw) {
 
 	$res = mysqli_query($conn,$query);
 
+	// var_dump($res); die();
+
 	if (mysqli_num_rows($res)>0) {
 		echo "User already exists!";
 	} else {
@@ -31,6 +33,7 @@ if ($pw == $cpw) {
 	$res2 = mysqli_query($conn,$sql2);
 
 	echo "Inserted!";
+	header("location: login.php");
 	}
 
 } else {

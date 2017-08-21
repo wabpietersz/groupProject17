@@ -1,8 +1,5 @@
 <?php 
 session_start();
-if (isset($_SESSION['log_count'])){
-	$log_count = $_SESSION['log_count'];
-}
  ?>
 <!doctype html>
 <html lang = "en">
@@ -10,7 +7,7 @@ if (isset($_SESSION['log_count'])){
 <head>
 	<title>2nd year group project</title>
 	<meta charset = "utf-8">
-	<metaname ="viewport" content="width=device-width, initial-scale=1">
+	<metaname="viewport" content="width=device-width, initial-scale=1">
 
 	<!--this is for link css file-->
 	<link rel="stylesheet" type="text/css" href="css/index.css">
@@ -22,18 +19,6 @@ if (isset($_SESSION['log_count'])){
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<?php
-	if (isset($_SESSION['log_count'])){
-		if($log_count == 1){
-			echo"
-			<script type='text/javascript'>
-    		$(window).on('load',function(){
-        		$('#myModal').modal('show');
-		    });
-			</script>";
-		}
-	}
-	?>
 </head>
 
 <body>
@@ -73,11 +58,10 @@ if (isset($_SESSION['log_count'])){
 			          <li><a href="#">Interior Trends</a></li>
 			        </ul>
 			      </li>
-			      <li><a href="#" id="NavFont">Forum</a></li>
+			      <li><a href="#" id="NavFont">WIKI</a></li>
 			      <li><a href="#" id="NavFont">About Us</a></li>  
 			    </ul>
-			    
-				<form class="navbar-form navbar-right" id="NavFont">
+			    <form class="navbar-form navbar-right" id="NavFont">
 			      <div class="form-group" id="SearchBarButton">
 			        <input type="text" class="form-control" placeholder="Search">
 			      </div>
@@ -107,57 +91,39 @@ if (isset($_SESSION['log_count'])){
 		<div class="row">
 			<div class = "col-md-12">
 				<div id="myCarousel" class="carousel slide" data-ride="carousel">
-					<!-- Indicators -->
-					<ol class="carousel-indicators">
-						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-						<li data-target="#myCarousel" data-slide-to="1"></li>
-						<li data-target="#myCarousel" data-slide-to="2"></li>
-						<li data-target="#myCarousel" data-slide-to="3"></li>
-						<li data-target="#myCarousel" data-slide-to="4"></li>
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+				    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				    <li data-target="#myCarousel" data-slide-to="1"></li>
+				    <li data-target="#myCarousel" data-slide-to="2"></li>
+				  </ol>
 
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner" role="listbox">
+				    <div class="item active" >
+				      <img class="img-rounded" id="ContentImage" src="images/1.jpg" alt="Chania">
+				      <div class="carousel-caption">
+				        
+				      </div>
+				    </div>
 
-					</ol>
+				    <div class="item">
+				      <img class="img-rounded" id="ContentImage" src="images/2.jpg" alt="Chania">
+				      <div class="carousel-caption">
+				        
+				      </div>
+				    </div>
 
-					<!-- Wrapper for slides -->
-					<div class="carousel-inner" role="listbox">
-						<div class="item active" >
-							<img class="img-rounded" id="ContentImage" src="images/location-villa-au-cap-afrique-du-sud.jpg" alt="Chania">
-							<div class="carousel-caption">
+				    <div class="item">
+				      <img class="img-rounded" id="ContentImage" src="images/3.jpg" alt="Flower">
+				      <div class="carousel-caption">
+				        
+				      </div>
+				    </div>
 
-							</div>
-						</div>
+				    
 
-						<div class="item">
-							<img class="img-rounded" id="ContentImage" src="images/Armada-Pic-2.jpg" alt="Chania">
-							<div class="carousel-caption">
-
-							</div>
-						</div>
-
-						<div class="item">
-							<img class="img-rounded" id="ContentImage" src="images/10.jpg" alt="Flower">
-							<div class="carousel-caption">
-
-							</div>
-						</div>
-
-						<div class="item">
-							<img class="img-rounded" id="ContentImage" src="images/11.jpg" alt="Chania">
-							<div class="carousel-caption">
-
-							</div>
-						</div>
-
-						<div class="item">
-							<img class="img-rounded" id="ContentImage" src="images/12.jpg" alt="Chania">
-							<div class="carousel-caption">
-
-							</div>
-						</div>
-
-
-
-						<!-- Left and right controls -->
+				  <!-- Left and right controls -->
 				  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
 				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 				    <span class="sr-only">Previous</span>
@@ -171,92 +137,59 @@ if (isset($_SESSION['log_count'])){
 		</div>
 
 		<div class="row" id="NewsFeed">
-			<div>
-			<!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
-				<div id="myModal" class="modal fade" role="dialog">
-				  <div class="modal-dialog">
-
-				    <!-- Modal content-->
-				    <div class="modal-content">
-				      <div class="modal-header">
-				        <button type="button" class="close" data-dismiss="modal">&times;</button>
-				        <h4 class="modal-title">Modal Header</h4>
-				      </div>
-				      <div class="modal-body">
-				        <p>Some text in the modal.</p>
-				      </div>
-				      <div class="modal-footer">
-				        <button type="button" class="btn btn-success">Submit</button>
-				      </div>
-				    </div>
-
-				  </div>
-				</div>
-			</div>
 			<div class="col-md-12">
-				<h1 id ="NewsFeedHeading">Latest Updates</h1>
-
+				<h1 id ="NewsFeedHeading">Latest Upadtes</h1>
 				<div class = "col-md-4" id="NewsFeedImages">
-					<img src = "images/buddhist-architecture.jpg" class="img-rounded center-block" alt="Cinque Terre" width="304" height="236">
-					<center>
-					<h3>Historical Architectural designs</h3>
-					<h5>History</h5>
-					</center>
-					<hr/>
-					<p>You can view the history of Architectural Designs and the eras those designs were used. From here you can get a clear idea about the evolution of Architecture.</p>
-					<a href="#">more..</a>
-				</div>
-				<div class = "col-md-4" id="NewsFeedImages">
-					<img  src = "images/5.jpg" class="img-circle center-block" alt="Cinque Terre" width="304" height="236">
-					<center>
-					<h3>Architects</h3>
-	            	<h5>PROFILE</h5>
-	            	</center>
+					<img  src = "images/4.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+					<h1>Latest house designs</h1>
+	            	<h3>WEB PAGES</h3>
 	            	<hr/>
-	            	<p>You can view the  profiles of Architects who are spread all over Sri Lanka. All Architects are registered under Sri Lanka Institute of Architects (SLIA)</p>
-	            	<a href="#">more..</a> 
-				</div>
-				<div class = "col-md-4" id="NewsFeedImages">
-					<img  src = "images/6.jpg" class="img-rounded center-block" alt="Cinque Terre" width="304" height="236">
-					<center>
-					<h3>Latest house designs</h3>
-					<h5>Modern Trends</h5>
-					</center>
-					<hr/>
-					<p>You can get all the information you require about Architecture with all the modern trends and the latest house designs. These will help you to build your dream house according to the modern trends.</p>
-					<a href="#">more..</a>
+	            	<p>aaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaa aaaaaaaa</p>
+	            	<a href="#">more</a>
 				</div>
 
+				<div class = "col-md-4" id="NewsFeedImages">
+					<img  src = "images/5.jpg" class="img-circle" alt="Cinque Terre" width="304" height="236">
+					<h1>Architectures</h1>
+	            	<h3>WRITING</h3>
+	            	<hr/>
+	            	<p>bbbbbbbbbbbbbb bbbbbbbbbbbbbbbbbbbb bbbbbbbbbbbbbbbbbbbbbbb bbbbbbbbbbbbbbbbb bbbbbbbbbbbbbbbbbb bbbbbbbbb</p>
+	            	<a href="#">more</a> 
+				</div>
+
+				<div class = "col-md-4" id="NewsFeedImages">
+					<img src = "images/6.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+					<h1>Latest interior designs</h1>
+	            	<h3>PAINTING</h3>
+	            	<hr/>
+	            	<p>cccccccccccccc ccccccccccccccccccccc cccccccccccccccccc ccccccccccccccccccccc  cccccccccccccc ccccccccccccc</p>
+	            	<a href="#">more</a>
+				</div> 
 			</div>
 		</div>
 
 		<div class="row" id="Footer">
 				<div class = "col-md-3 col-xs-6">
-				<center>
-					<h2>Latest designs</h2>
+					<h2>latest designs</h2>
 					<ul>
     				<li>Spring</li>   					
     				<li>Summer</li>
    					<li>Autumn</li>
     				<li>Winter</li>
     				</ul>
-    			</center>
 
 				</div>
 
 				<div class = "col-md-3 col-xs-6">
-				<center>
-					<h2>Profiles</h2>
+					<h2>profiles</h2>
 					<ul>
     				<li>Augest 2010</li>   					
     				</ul>
-    			</center>
 
 				</div>
 
 				<div class = "col-md-3 col-xs-6">
-				<center>
-					<h2>House Categories</h2>
+					<h2>house categories</h2>
 					<ul>
     				<li>Spring</li>   					
     				<li>Summer</li>
@@ -264,19 +197,17 @@ if (isset($_SESSION['log_count'])){
     				<li>Winter</li>
     				<li>design</li>
     				</ul>
-    			</center>
 
 				</div>
 
 				<div class = "col-md-3 col-xs-6">
-				<center>
 					<h2>Contact US</h2>
 					<ul>
-    				<li>Mobile</li>   					
-    				<li>E-Mail</li>
-   					<li>Office</li>
+    				<li>MOBILE</li>   					
+    				<li>EMAIL</li>
+   					<li>OFFICE</li>
     				</ul>
-    			</center>
+
 				</div>
 		</div>
 

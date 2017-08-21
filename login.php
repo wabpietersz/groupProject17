@@ -1,5 +1,5 @@
 <?php 
-	require ('dbcon.php');
+	require ('dbcon.php')
 ?>
 <!doctype html>
 <html lang = "en">
@@ -47,7 +47,7 @@
 			<nav class="navbar navbar-inverse" id="NavBar">
 			  <div class="container-fluid" >
 			    <div class="navbar-header"> 
-			      <a class="navbar-brand" href="index.html" id="NavFontLogo">Nivahan.lk</a>
+			      <a class="navbar-brand" href="index.php" id="NavFontLogo">Nivahan.lk</a>
 			    </div>
 			    <ul class="nav navbar-nav" >
 			      <li><a href="#" id="NavFont">Guide Me</a></li>
@@ -62,17 +62,18 @@
 			      <li><a href="#" id="NavFont">WIKI</a></li>
 			      <li><a href="#" id="NavFont">About Us</a></li>  
 			    </ul>
-			    
-				<ul class="nav navbar-nav navbar-right" id="NavFont">
-					<li><a href="signup.php" id="NavFont"><i class="fa fa-user-plus " aria-hidden="true"></i> Sign Up</a></li>
-			    </ul>	
-
 			    <form class="navbar-form navbar-right" id="NavFont">
 			      <div class="form-group" id="SearchBarButton">
 			        <input type="text" class="form-control" placeholder="Search">
 			      </div>
 			      <button type="submit" class="btn btn-default" id="SearchBarButton"><i class="fa fa-search " aria-hidden="true"></i></button>
 			    </form>
+			    
+				<ul class="nav navbar-nav navbar-right" id="NavFont">
+					<li><a href="signup.php" id="NavFont"><i class="fa fa-user-plus " aria-hidden="true"></i> Sign Up</a></li>
+			    </ul>	
+
+			    
 
 			  </div>
 			</nav>
